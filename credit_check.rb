@@ -40,8 +40,8 @@ class CreditCheck
     end
 
   c = CreditCheck.new
-  # card = "4024007136512380"
-  card = "342804633855673" #amex
+  card = "4024007106512380"
+  # card = "342804633855673" #amex
   puts c.card_length(card)
 
   # Valid: 5541808923795240, 4024007136512380, 6011797668867828
