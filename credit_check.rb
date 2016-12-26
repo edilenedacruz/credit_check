@@ -13,22 +13,14 @@ class CreditCheck
   end
 
   def reg_cards(card)
-    two_times = split_nums(card).map.with_index do |num, index|
-      index.even? ? num * 2 : num
-    end
-    summed_numbers = two_times.map do |num|
-      num > 9 ? num - 9 : num
-    end
-   total(summed_numbers)
+    two_times = split_nums(card).map.with_index { |num, index| index.even? ? num * 2 : num }
+    summed_numbers = two_times.map { |num| num > 9 ? num - 9 : num }
+    total(summed_numbers)
   end
 
   def amex_cards(card)
-    two_times = split_nums(card).map.with_index do |num, index|
-      index.odd? ? num * 2 : num
-    end
-    summed_numbers = two_times.map do |num|
-      num > 9 ? num - 9 : num
-    end
+    two_times = split_nums(card).map.with_index { |num, index| index.odd? ? num * 2 : num }
+    summed_numbers = two_times.map { |num| num > 9 ? num - 9 : num }
     total(summed_numbers)
   end
 
@@ -43,7 +35,7 @@ class CreditCheck
 end
 
   c = CreditCheck.new
-  card = "5541808923795240"
+  card = "342801633855673"
   c.card_length(card)
 
   # Valid: 5541808923795240, 4024007136512380, 6011797668867828
