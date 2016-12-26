@@ -1,3 +1,7 @@
+These are three solutions to Turing's [Credit Check challenge](https://github.com/turingschool/challenges/blob/master/credit_check.markdown)
+
+The markdown is also included below:
+
 # Credit Check
 
 Let's write a program that can detect mistakes in a credit card number.

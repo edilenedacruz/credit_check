@@ -1,4 +1,4 @@
-card_number = "6011797668868728"
+card_number = "5541808923795240"
 
 split_card_number = card_number.chars.map { |num| num.to_i}
 
